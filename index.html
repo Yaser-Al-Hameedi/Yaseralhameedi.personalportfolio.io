@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+
+</head>
+<body>
+ <div id="header">
+    <div class="container">
+        <nav>
+            <img src="assests/Yaser (3).png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+            </ul>
+            
+        </nav>
+        <div class="header-text">
+            <div class="text-container">
+                <!-- Your text content goes here -->
+                <p>Undergraduate<br>University Of Bridgeport Student</p>
+                <h1><span>Hello</span>,<br> I'm Yaser Al-Hameedi</h1>
+            </div>
+            <div class="image-container">
+                <!-- Your image goes here -->
+                <img src="assests/IMG_6095.PNG">
+            </div>
+        </div>
+
+ 
+ 
+
+
+
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="assests/IMG_3844.PNG">
+            </div>
+            <div class="about-col-1">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm currently pursuing my degree in computer science. 
+                    My journey into the world of technology began with a 
+                    fascination for problem solving and a curiosity about 
+                    the digital world. As a problem solver, I try my best 
+                    to tackle difficult problems and finding the best solutions
+                    Looking ahead, I want to continue my pursuit in computer science, 
+                    contribute to many projects, and make a great impact in the tech industry.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                         <li><span>Web Development</span><br>Personal Portfolio (HTML, CSS, JavaScript)</li>
+                         <li><span>Backend</span><br> Very Familiar with Data Structures and Algorithms</li>
+                        
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                         <li><span>Classes I've Taken</span><br><br>Intro to Comp I and II (Java)<br><br>Advanced File and Data Structures (Java)<br><br>Algorithms (Java)</li>
+                         
+                    </ul>
+                </div>
+
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                         <li><span>College</span><br><br>2 Years</li>
+                         <li><span>Courses</span><br><br>Took many courses on HTML, CSS, and JavaScript
+                        <br><br>Helped me to learn a lot about Web Development</li>
+                    </ul>
+                </div>
+
+                
+            </div>
+        
+    </div>
+</div>
+
+
+
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="assests/Portfolio.png">
+                <div class="layer">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>Personal Portfolio responsive website using HTML, CSS, and Java Script</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="assests/Records.png">
+                <div class="layer">
+                    <h3>Student Record Keeper</h3>
+                    <p>This Java program provides a simple record 
+                        management system for reading, writing, updating, 
+                        and deleting records stored in a random access file.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+
+            </div>
+
+            <div class="work">
+                <img src="assests/Thread.png">
+                <div class="layer">
+                    <h3>Thread Manipulator</h3>
+                    <p>Parallel sorting algorithm that efficiently sorts 
+                        an array of size 2^k using a specified number 
+                        of threads (a power of 2). The code initializes 
+                        an array of random integers, divides the sorting 
+                        work among multiple threads, and utilizes the 
+                        CyclicBarrier class for synchronization. </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+</div>
+    
+
+    </div>
+</div>
+
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>  Contact @yaseralhameedi@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>  203-544-3844</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/yaser_alhameedi/?img_index=1"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/yaser-al-hameedi-319ab729a/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href=""  download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class=" btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright @ Yaser. Made By Yaser Al-Hameedi <i class="fa-solid fa-heart"></i></p>
+    </div>
+
+
+
+
+</div> 
+
+
+
+
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right= "0";
+    }
+    function closemenu(){
+        sidemenu.style.right= "-200px";
+    }
+
+    
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxS8WzbDi0MDnREpdM_MSxMmh4I0pbj6BRiFOCk6WiPu_jVHBVITC7czc7G8oZGnxWBrA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
